@@ -240,13 +240,49 @@ body p{
   top: 36px;
   width: 150px;
 }
+
+/*.features .col-md-2 > h2::before {*/
+/*  background: red none repeat scroll 0 0;*/
+/*  content: "";*/
+/*  height: 37px;*/
+/*  !*left: 35%;*!*/
+/*  position: absolute;*/
+/*  width: 1px;*/
+/*}*/
+/*.features .col-md-2 > h2::after {*/
+/*  background: red none repeat scroll 0 0;*/
+/*  content: "";*/
+/*  height: 1px;*/
+/*  left: 15%;*/
+/*  position: absolute;*/
+/*  top: 37px;*/
+/*  width: 150px;*/
+/*}*/
+
+
+
+.title-border {
+    margin-bottom: 20px;
+    border-bottom: 2px solid;
+    border-left: 2px solid;
+    border-color: #ff0000;
+}
+.title-border h2{
+    margin-bottom: 0px;
+    font-size: 25px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top:0;
+    position:relative;
+}
+
 .features .col-md-3{
 	text-align:center;
 }
 .features .col-md-3 .single-service{
      border:1px solid #E8E8E8;
      padding: 0 5px;
-     height: 310px;
+     height: 330px;
      transition:1s ease;
  }
 
@@ -254,12 +290,13 @@ body p{
     width: 20%;
 }
 
-.features .col-md-2 .single-service-crew{
+.features .col-md-3 .single-service-crew{
     border:1px solid #E8E8E8;
     padding: 0 5px;
-    height: 250px;
+    height: 310px;
     transition:1s ease;
     text-align: center;
+
 
 }
 
@@ -316,6 +353,65 @@ body p{
 .features .col-md-3:hover .single-service h3{
 	color: #EE3866;
 }
+
+/*crew hover*/
+
+.features .col-md-3:hover .single-service-crew img{
+    display: block;
+    margin: -40px auto 0 auto;
+}
+
+.single-service-crew p {
+    opacity:0;
+    transition:.5s ease;
+}
+
+.features .col-md-3:hover .single-service-crew p{
+    text-decoration:none;
+    opacity:1;
+}
+.features .col-md-3:hover .single-service-crew span{
+    font-size: 0.9rem;
+}
+.features .col-md-3:hover .single-service-crew h4{
+    color: #EE3866;
+}
+
+.features .col-md-3 .single-service-crew img{
+    transition:1s ease;
+
+}
+
+
+.features .col-md-3 .single-service-crew span{
+    transition:1s ease;
+    color: rgb(150, 150, 150);
+
+}
+.features .col-md-3 .single-service-crew h4{
+    transition:1s ease;
+    margin-bottom: 0.1rem;
+}
+
+
+.testimonial .title-border > h2 {
+    font-size: 25px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top:0;
+    color:#fff;
+    position:relative;
+}
+.contact .title-border > h2 {
+    font-size: 25px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top:0;
+    color:#fff;
+    position:relative;
+
+}
+
 .other-features{
 	padding:150px 0;
 }
@@ -909,6 +1005,10 @@ body p{
     clear: both;
 }
 
+.subject-header {
+    font-size: 1.3rem;
+}
+
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
@@ -1002,3 +1102,5 @@ body p{
         page-break-after: avoid;
     }
 }
+
+
