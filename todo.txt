@@ -1,4 +1,4 @@
-[ ] map static files and medias
+[x] map static files and medias
 [ ] create db
         * Student
         * Teacher

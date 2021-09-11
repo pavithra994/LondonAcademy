@@ -1,4 +1,5 @@
 <!doctype html>
+{% load static %}
 <html class="no-js" lang="">
     <head>
         <meta charset="utf-8">
@@ -7,20 +8,26 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+        <link rel="shortcut icon" type="image/x-icon" href="{% static 'images/favicon.ico' %}">
         
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="{% static 'css/normalize.css' %}">
+        <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+        <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
 		<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="css/owl.carousel.css">
-        <link rel="stylesheet" href="css/owl.theme.css">
-        <link rel="stylesheet" href="css/animate.css">
-        <link rel="stylesheet" href="css/slicknav.min.css">
-        <link rel="stylesheet" href="css/responsive.css">
-        <link rel="stylesheet" href="css/main.css">
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <link rel="stylesheet" href="{% static 'css/owl.carousel.css' %}">
+        <link rel="stylesheet" href="{% static 'css/owl.theme.css' %}">
+        <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+        <link rel="stylesheet" href="{% static 'css/slicknav.min.css' %}">
+        <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+        <link rel="stylesheet" href="{% static 'css/main.css' %}">
+
+		<!--<link rel="stylesheet" href="{% static 'css/main.css' %}">-->
+
+
+
+
+        <script src="{% static 'js/vendor/modernizr-2.8.3.min.js' %}"></script>
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -33,7 +40,7 @@
 					<div class="row">
 						<div class="col-md-4">
 							<div id="logo">		
-								<a href=""><img src="images/London%20Academy%20Logo%20white.png" alt="" title=""  height="25px" style="float: left;"/></a>
+								<a href=""><img src="{% static 'images/London%20Academy%20Logo%20white.png' %}" alt="" title=""  height="25px" style="float: left;"/></a>
 							</div>
 						</div>
 						<div class="col-md-8">
@@ -55,7 +62,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-md-4 col-sm-6 col-xs-12 intro-image">
-							<img src="images/student1.png" alt="" />
+							<img src="{% static 'images/student1.png' %}" alt="" />
 						</div>
 						<div class="col-md-8 col-sm-6 col-xs-12 intro-texts">
 							<h1>London Academy sri lanka</h1>
@@ -146,7 +153,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-5 col-sm-5 wow fadeIn">
-						<img src="images/degree_girl.png" alt="" />
+						<img src="{% static 'images/degree_girl.png' %}" alt="" />
 					</div>
 					<div class="col-md-7 col-sm-7 wow fadeIn">
 						<h2>Who we are</h2>
@@ -471,7 +478,7 @@
 					<div class="row">
 						<div class="col-md-3 col-sm-6 wow fadeInLeft">
 							<div class="single-service-crew">
-								<div><img src="images/Amali1.jpg" class="rounded-circle" alt="" style="width: 150px; height: 150px"/></div>
+								<div><img src="{% static 'images/Amali1.jpg' %}" class="rounded-circle" alt="" style="width: 150px; height: 150px"/></div>
 								<h4>Ms. Amali Kottegoda</h4>
 								<span>BSc, MSc in Applied Organic Chemistry (Reading)</span>
 								<p>
@@ -487,7 +494,7 @@
 
 						<div class="col-md-3 col-sm-6 wow fadeInLeft">
 							<div class="single-service-crew">
-								<div><img src="images/Amali1.jpg" class="rounded-circle" alt="" style="width: 150px; height: 150px"/></div>
+								<div><img src="{% static 'images/Amali1.jpg' %}" class="rounded-circle" alt="" style="width: 150px; height: 150px"/></div>
 								<h4>Ms. Lakmini Kottegoda </h4>
 								<span>Attorney-at-law, LLB (Hons), Masters in Biasness Management (Reading)</span>
 								<p>
@@ -503,7 +510,7 @@
 
 						<div class="col-md-3 col-sm-6 wow fadeInLeft">
 							<div class="single-service-crew">
-								<div><img src="images/Amali1.jpg" class="rounded-circle" alt="" style="width: 150px; height: 150px"/></div>
+								<div><img src="{% static 'images/Amali1.jpg' %}" class="rounded-circle" alt="" style="width: 150px; height: 150px"/></div>
 								<h4>Ms. Kaumini Nikeshika</h4>
 								<span>BSc</span>
 								<p>
@@ -519,7 +526,7 @@
 
 						<div class="col-md-3 col-sm-6 wow fadeInLeft">
 							<div class="single-service-crew">
-								<div><img src="images/Amali1.jpg" class="rounded-circle" alt="" style="width: 150px; height: 150px"/></div>
+								<div><img src="{% static 'images/Amali1.jpg' %}" class="rounded-circle" alt="" style="width: 150px; height: 150px"/></div>
 								<h4>Ms. Lanka Dissanayake </h4>
 								<span>BSc</span>
 								<p>
@@ -617,10 +624,10 @@
 			</section>
 		</div>
 		
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/owl.carousel.min.js"></script>
+        <script src="{% static 'https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js' %}"></script>
+        <script>window.jQuery || document.write('<script src="{% static 'js/vendor/jquery-1.11.3.min.js' %}"><\/script>')</script>
+        <script src="{% static 'js/bootstrap.min.js' %}"></script>
+        <script src="{% static 'js/owl.carousel.min.js' %}"></script>
 		<script type="text/javascript">
 			$(document).ready(function() {
      
@@ -649,12 +656,12 @@
 			   });
 			});
 		</script>
-        <script src="js/wow.min.js"></script>
+        <script src="{% static 'js/wow.min.js' %}"></script>
 		<script>
 		  new WOW().init();
 		</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+        <script src="{% static 'js/plugins.js' %}"></script>
+        <script src="{% static 'js/main.js' %}"></script>
 		<script type="text/javascript">
 			// handle links with @href started with '#' only
 			$(document).on('click', 'a[href^="#"]', function(e) {
@@ -697,7 +704,7 @@
 			  }
 			}
 		</script>
-		<script src="js/jquery.slicknav.min.js"></script>
+		<script src="{% static 'js/jquery.slicknav.min.js' %}"></script>
 		<script>
 			$(function(){
 				$('#main-menu').slicknav();
