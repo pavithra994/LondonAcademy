@@ -287,7 +287,7 @@ body p{
  }
 
 .features .col-md-2{
-    width: 20%;
+    width: 50%;
 }
 
 .features .col-md-3 .single-service-crew{
@@ -402,6 +402,7 @@ body p{
     color:#fff;
     position:relative;
 }
+
 .contact .title-border > h2 {
     font-size: 25px;
     text-align: center;
