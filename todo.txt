@@ -1,0 +1,12 @@
+# map static files and medias
+# create db
+    * Student
+    * Teacher
+    * Review
+    * Curriculum
+    * Subject
+    * Message
+
+    * WebContent **
+
+# render home page
